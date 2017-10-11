@@ -1,0 +1,28 @@
+html {
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    /*  color: #83FFBA; */
+    color: #D03641;
+    font-size: 3em;
+}
+
+.intro {
+    position: relative;
+    top: 1em;
+    left: 2em;
+}
+
+.scroll {
+    left: 0;
+    width: 2500px; !important;
+    height: 600px !important;
+    position: relative;
+
+    background-color: #2A2A2A;
+    background-image: url("wave.png");
+    overflow: auto;
+}
