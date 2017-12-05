@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;GAEG;ACFH;;GAEG;ACYH,KAAM;EACJ,KAAK,EFXQ,OAAO;EEYpB,SAAS,EDZA,IAAI;;ACef,QAAS;EACP,KAAK,EFfS,OAAO",
+"mappings": "AAAA;;GAEG;ACFH;;GAEG;ACYH,KAAM;EACJ,KAAK,EFXQ,OAAO;EEYpB,SAAS,EDZA,IAAI;;ACef,KAAM;EACJ,KAAK,EFfS,OAAO",
 "sources": ["modules/colors.scss","partials/typography.scss","main.scss"],
 "names": [],
 "file": "main.css"
