@@ -56,12 +56,13 @@ Typography
 .side {
   background-color: yellow;
   height: 100vh;
-  overflow-y: scroll;
   overflow-x: hidden; }
   .side.right {
-    background-color: blue; }
+    background-color: blue;
+    overflow-y: hidden; }
   .side.left {
-    background-color: red; }
+    background-color: red;
+    overflow-y: scroll; }
 
 body {
   font-size: 16px; }
@@ -83,7 +84,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden; }
 
-.child {
+.step-section {
   height: 100%;
   width: 100%; }
 
