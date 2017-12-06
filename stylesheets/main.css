@@ -77,4 +77,20 @@ body {
   top: 0;
   left: 0; }
 
+/*Scroll-Steps-Import*/
+#container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.child {
+  height: 100%;
+  width: 100%; }
+
+.red {
+  background-color: red; }
+
+.blue {
+  background-color: blue; }
+
 /*# sourceMappingURL=main.css.map */
