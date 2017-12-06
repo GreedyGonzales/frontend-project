@@ -48,10 +48,16 @@ Typography
 .flex-parent {
   display: flex;
   flex-flow: row wrap; }
+  .flex-parent.inner {
+    flex-flow: column nowrap; }
 
 .flex-child {
   flex-grow: 1;
   flex-basis: 30em; }
+  .flex-child.inner {
+    display: inherit;
+    align-items: center;
+    justify-content: center; }
 
 .side {
   background-color: yellow;

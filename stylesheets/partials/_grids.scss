@@ -1,11 +1,21 @@
 .flex-parent {
   display: flex;
   flex-flow: row wrap;
+
+  &.inner {
+    flex-flow: column nowrap;
+  }
 }
 
 .flex-child {
   flex-grow: 1;
   flex-basis: 30em;
+
+  &.inner {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .side {
