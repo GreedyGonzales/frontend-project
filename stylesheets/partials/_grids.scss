@@ -1,0 +1,24 @@
+.flex-parent {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-child {
+  flex-grow: 1;
+  flex-basis: 30em;
+}
+
+.side {
+  background-color: yellow;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &.right {
+    background-color: blue;
+  }
+
+  &.left {
+    background-color: red;
+  }
+}
