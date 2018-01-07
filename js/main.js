@@ -15,14 +15,14 @@ $(document).ready(function(){
         });
 
 
-        //  setTimeout(hideSection,810)
 
+
+        $(".intro-text").fadeOut("slow");
         $(".images-section").removeClass("fadeIn");
         setTimeout(displayImages,810)
     };
 
     function checkVisibility() {
-        console.log("Funktionstest - checkVisibility");
         var visibleSection = "";
 
         $('#container-left').find('.step-section').each(function(){
@@ -35,8 +35,6 @@ $(document).ready(function(){
 
             if(((scroll_position + viewport_height) > element_position) &&
                 ((element_position + element_height) > scroll_position)){
-                console.log("Visible Element is detected");
-                console.log("Visible Element is: " + sectionToCheck.attr('id'));
                 visibleSection = sectionToCheck.attr('id');
             }
         });
@@ -46,8 +44,6 @@ $(document).ready(function(){
 
 
     var displayImages = function() {
-        console.log("Funktionstest - displayImages");
-        //      console.log(checkVisibility());
 
         var rightSection = $("#" + (checkVisibility() + '-images'));
 

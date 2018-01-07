@@ -53,6 +53,7 @@
 
   &.left {
     overflow-y: scroll;
+    background-color: $leftBackground;
 
     & p {
       font-size: 1.25em;
