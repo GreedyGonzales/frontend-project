@@ -3,3 +3,8 @@ Typography
  */
 
 $Bodycopy: 16px;
+$H2: 2.5em;
+
+h2 {
+  font-size: $H2;
+}

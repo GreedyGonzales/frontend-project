@@ -1,0 +1,32 @@
+.type-list {
+  list-style: none;
+
+  & li {
+    color: white;
+    float: left;
+    padding: 1em 2em;
+    margin-top: 1em;
+    border-radius: 15px;
+
+    &:nth-child(2) {
+      margin-right: 2em;
+    }
+  }
+}
+
+//Pokemon Typen
+.grass {
+  background-color: #2ECC71;
+}
+
+.poison {
+  background-color: #913D88;
+}
+
+.fire {
+  background-color: #F89406;
+}
+
+.water {
+  background-color: #19B5FE;
+}
