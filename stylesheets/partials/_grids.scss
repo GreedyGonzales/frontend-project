@@ -20,13 +20,17 @@
 }
 
 .side {
-  background-color: yellow;
   height: 100vh;
   overflow-x: hidden;
 
   &.right {
-    background-color: blue;
     overflow-y: hidden;
+
+    & > div.step-section {
+      //background: rebeccapurple;
+      position: absolute;
+      width: 50%;
+    }
   }
 
   &.left {

@@ -61,12 +61,13 @@ Typography
     padding: 2% 10%; }
 
 .side {
-  background-color: yellow;
   height: 100vh;
   overflow-x: hidden; }
   .side.right {
-    background-color: blue;
     overflow-y: hidden; }
+    .side.right > div.step-section {
+      position: absolute;
+      width: 50%; }
   .side.left {
     background-color: red;
     overflow-y: scroll; }
@@ -78,7 +79,6 @@ body {
   font-size: 2em; }
 
 .content {
-  background-color: green;
   width: 100%;
   height: 100%;
   position: absolute;

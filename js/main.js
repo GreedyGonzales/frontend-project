@@ -14,14 +14,37 @@ $(document).ready(function(){
                 $(this).one("scroll", scrollerLeft);
             });
         });
+        //      checkVisibility();
+        setTimeout(checkVisibility,810)
     };
 
+    function checkVisibility() {
+        console.log("Funktionstest - checkVisibility");
+
+        $('#container-left').find('.step-section').each(function(){
+            var sectionToCheck = $(this);
+            //      console.log(sectionToCheck.attr('id'));
+
+            var element_position = sectionToCheck.offset().top;
+            var element_height = sectionToCheck.height();
+            var scroll_position = $(window).scrollTop();
+            var viewport_height = $(window).height();
+
+            if(((scroll_position + viewport_height) > element_position) &&
+                ((element_position + element_height) > scroll_position)){
+                console.log("Visible Element is detected");
+                console.log("Visible Element is: " + sectionToCheck.attr('id'));
+            }
+        });
+    }
+
+
     var displayImages = function() {
-        console.log("Funktionstest");
+        console.log("Funktionstest - displayImages");
+        checkVisibility();
     };
 
     $container_left.one("scroll", scrollerLeft);
-    $container_left.one("scroll", displayImages);
 
     $(window).on('resize', function(){
         $container_left_Height = $container_left.outerHeight();
