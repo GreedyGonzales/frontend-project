@@ -67,7 +67,16 @@ Typography
     overflow-y: hidden; }
     .side.right > div.step-section {
       position: absolute;
-      width: 50%; }
+      background-color: white;
+      width: 50%;
+      opacity: 0;
+      -webkit-transition: opacity 350ms ease-out;
+      -moz-transition: opacity 350ms ease-out;
+      -o-transition: opacity 350ms ease-out;
+      transition: opacity 350ms ease-out; }
+    .side.right > div.fadeIn {
+      display: flex;
+      opacity: 1; }
   .side.left {
     background-color: red;
     overflow-y: scroll; }
