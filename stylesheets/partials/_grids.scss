@@ -15,7 +15,7 @@
     display: inherit;
     align-items: center;
     justify-content: center;
-    padding: 2% 10%;
+    padding: 10% 10%;
   }
 }
 
@@ -52,7 +52,17 @@
   }
 
   &.left {
-    background-color: red;
     overflow-y: scroll;
+
+    & p {
+      font-size: 1.25em;
+      line-height: 1.25;
+    }
+
+    & div.flex-child {
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
   }
 }

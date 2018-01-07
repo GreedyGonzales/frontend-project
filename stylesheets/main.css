@@ -45,6 +45,9 @@ table {
 /*
 Typography
  */
+h2 {
+  font-size: 2.5em; }
+
 .flex-parent {
   display: flex;
   flex-flow: row wrap; }
@@ -58,7 +61,7 @@ Typography
     display: inherit;
     align-items: center;
     justify-content: center;
-    padding: 2% 10%; }
+    padding: 10% 10%; }
 
 .side {
   height: 100vh;
@@ -78,11 +81,49 @@ Typography
       display: flex;
       opacity: 1; }
   .side.left {
-    background-color: red;
     overflow-y: scroll; }
+    .side.left p {
+      font-size: 1.25em;
+      line-height: 1.25; }
+    .side.left div.flex-child {
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: flex-start; }
+
+.images-section img {
+  width: auto;
+  max-width: 40vw; }
+
+.type-list {
+  list-style: none; }
+  .type-list li {
+    color: white;
+    float: left;
+    padding: 1em 2em;
+    margin-top: 1em;
+    border-radius: 15px; }
+    .type-list li:nth-child(2) {
+      margin-right: 2em; }
+
+.grass {
+  background-color: #2ECC71; }
+
+.poison {
+  background-color: #913D88; }
+
+.fire {
+  background-color: #F89406; }
+
+.water {
+  background-color: #19B5FE; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; }
+
+main {
+  height: 100% !important; }
 
 .side > p {
   font-size: 2em; }
@@ -109,5 +150,8 @@ body {
 
 .blue {
   background-color: blue; }
+
+.green {
+  background-color: green; }
 
 /*# sourceMappingURL=main.css.map */
