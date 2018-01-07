@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var $container_left = $('#container-left');
-    var $container_right = $('#container-right');
     var $container_left_Height = $container_left.outerHeight();
     var top_1 = 0;
 
@@ -14,16 +13,20 @@ $(document).ready(function(){
                 $(this).one("scroll", scrollerLeft);
             });
         });
-        //      checkVisibility();
-        setTimeout(checkVisibility,810)
+
+
+        //  setTimeout(hideSection,810)
+
+        $(".images-section").removeClass("fadeIn");
+        setTimeout(displayImages,810)
     };
 
     function checkVisibility() {
         console.log("Funktionstest - checkVisibility");
+        var visibleSection = "";
 
         $('#container-left').find('.step-section').each(function(){
             var sectionToCheck = $(this);
-            //      console.log(sectionToCheck.attr('id'));
 
             var element_position = sectionToCheck.offset().top;
             var element_height = sectionToCheck.height();
@@ -34,15 +37,30 @@ $(document).ready(function(){
                 ((element_position + element_height) > scroll_position)){
                 console.log("Visible Element is detected");
                 console.log("Visible Element is: " + sectionToCheck.attr('id'));
+                visibleSection = sectionToCheck.attr('id');
             }
         });
+
+        return visibleSection;
     }
 
 
     var displayImages = function() {
         console.log("Funktionstest - displayImages");
-        checkVisibility();
+        //      console.log(checkVisibility());
+
+        var rightSection = $("#" + (checkVisibility() + '-images'));
+
+        showSection(rightSection);
+
+
     };
+
+    function showSection(section) {
+        $(section).addClass("fadeIn");
+    }
+
+
 
     $container_left.one("scroll", scrollerLeft);
 
