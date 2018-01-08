@@ -36,8 +36,7 @@ Auf der linken Seite befindet sich der scrollbare Content-Bereich. Hier wurde be
   * #ECF0F1
   * Verwendung: Diese Farbe findet im Hintergrund des scrollbaren Content-Bereichs Anwendung.
   
-  ![alt text]
-  (https://github.com/GreedyGonzales/frontend-project/blob/master/img/styleguide-0.png)
+  ![Introtext-Image](https://github.com/GreedyGonzales/frontend-project/blob/master/img/styleguide-0.png)
   
 * Textfarbe Introtext
   * #D91E18
