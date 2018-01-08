@@ -10,3 +10,41 @@ Das Projekt soll einen Pokédex aus der ersten Generation darstellen. Im Anime d
 * Ablagestruktur: http://thesassway.com/beginner/how-to-structure-a-sass-project
 * Git Workflow: Feature Branch Workflow
 * CSS Framework: Nein.
+
+
+# Styleguide
+
+![alt text](http://url/to/img.png)
+
+**Module:**
+* Pokemon
+  
+**Inhalt:**
+* A: Textbereich
+  * A.1: Überschrift
+  * A.2: Eckdaten
+  * A.3: Typ(en)
+  * A.4: Beschreibung
+  
+* B: Bildbereich
+  * A.1: Bild
+  
+Auf der linken Seite befindet sich der scrollbare Content-Bereich. Hier wurde bewust ein feststehendes, screenfüllendes Layout im 50/50-Format gewählt. Links kann zwischen den Pokémon hin- und hergescrollt werden, während auf der rechten Seite jeweils das passende Bild angezeigt wird.
+
+**Farben:**
+* Hintergrundfarbe Content-Bereich
+  * #ECF0F1
+  * Verwendung: Diese Farbe findet im Hintergrund des scrollbaren Content-Bereichs Anwendung.
+  
+  ![alt text](http://url/to/img.png)
+  
+* Textfarbe Introtext
+  * #D91E18
+  * Verwendung: Diese Farbe findet sich im Intr-Schriftzug: "Pokédex" wieder.
+
+* Typenfarben: Pflanze, Gift, Feuer, Wasser
+  * Pflanze: #2ECC71
+  * Gift: #913D88
+  * Feuer: #F89406
+  * Wasser: #19B5FE
+  * Verwendung: Je nach Typ, oder Typenkombination des Pokémon, wird eine andere Farbe zur Visualisierung verwendet.
