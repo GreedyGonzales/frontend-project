@@ -12,6 +12,16 @@ Das Projekt soll einen Pokédex aus der ersten Generation darstellen. Im Anime d
 * CSS Framework: Nein.
 
 
+# Ablagestruktur
+:file_folder: *project-root*
+
+- :file_folder: *idea*
+- :file_folder: *img*
+- :file_folder: *js*
+- :file_folder: *stylesheets*
+   - :file_folder: *modules*
+   - :file_folder: *partials*
+
 # Styleguide
 
 ![Styleguide-Image](https://github.com/GreedyGonzales/frontend-project/blob/master/img/styleguide-1.png)
