@@ -26,9 +26,8 @@
   &.right {
     overflow-y: hidden;
 
-
-    @include respond-to(medium-screens) {
-      //flex-basis: 18vh;
+    &  div.flex-child.inner {
+      padding: 0;
     }
 
     & > div.step-section {

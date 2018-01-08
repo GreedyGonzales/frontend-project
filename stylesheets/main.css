@@ -65,6 +65,8 @@ Typography
   overflow-x: hidden; }
   .side.right {
     overflow-y: hidden; }
+    .side.right div.flex-child.inner {
+      padding: 0; }
     .side.right > div.step-section {
       position: absolute;
       background-color: white;
@@ -143,6 +145,15 @@ body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   overflow: hidden; }
+  @media screen and (max-width: 320px) {
+    body {
+      font-size: 1.5vw; } }
+  @media screen and (min-width: 321px) and (max-width: 1023px) {
+    body {
+      font-size: 1.5vw; } }
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 1.6vw; } }
 
 main {
   height: 100% !important; }

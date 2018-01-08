@@ -37,6 +37,18 @@ body {
   font-size: $Bodycopy;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
+
+  @include respond-to(handhelds) {
+    font-size: 1.5vw;
+  }
+
+  @include respond-to(medium-screens) {
+    font-size: 1.5vw;
+  }
+
+  @include respond-to(wide-screens) {
+    font-size: 1.6vw;
+  }
 }
 
 main {
