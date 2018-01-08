@@ -14,7 +14,7 @@ Das Projekt soll einen Pokédex aus der ersten Generation darstellen. Im Anime d
 
 # Styleguide
 
-![alt text](http://url/to/img.png)
+![Styleguide-Image](https://github.com/GreedyGonzales/frontend-project/blob/master/img/styleguide-1.png)
 
 **Module:**
 * Pokemon
@@ -36,7 +36,8 @@ Auf der linken Seite befindet sich der scrollbare Content-Bereich. Hier wurde be
   * #ECF0F1
   * Verwendung: Diese Farbe findet im Hintergrund des scrollbaren Content-Bereichs Anwendung.
   
-  ![alt text](http://url/to/img.png)
+  ![alt text]
+  (https://github.com/GreedyGonzales/frontend-project/blob/master/img/styleguide-0.png)
   
 * Textfarbe Introtext
   * #D91E18
