@@ -48,3 +48,8 @@ Auf der linken Seite befindet sich der scrollbare Content-Bereich. Hier wurde be
   * Feuer: #F89406
   * Wasser: #19B5FE
   * Verwendung: Je nach Typ, oder Typenkombination des Pokémon, wird eine andere Farbe zur Visualisierung verwendet.
+  
+  **Schriften:**
+* Roboto
+  * Roboto wird für jeglichen Text im Projekt verwendet.
+  * https://fonts.google.com/specimen/Roboto
