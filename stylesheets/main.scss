@@ -1,0 +1,100 @@
+// Modules and Variables
+@import "partials/base";
+@import "modules/colors";
+@import "modules/utility";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/figures";
+@import "partials/grids";
+@import "partials/images";
+@import "partials/lists";
+
+// ....
+
+// sThird-part
+h1 {
+  font-size: $h1;
+
+  @include respond-to(medium-screens) {
+    font-size: 2 * $h1;
+  }
+}
+
+h2 {
+  font-size: $h2;
+  font-weight: 900;
+
+  @include respond-to(medium-screens) {
+    font-size: 2 * $h2;
+    margin-bottom: 0.25em;
+  }
+}
+
+body {
+  font-size: $Bodycopy;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+
+  @include respond-to(handhelds) {
+    font-size: 1.5vw;
+  }
+
+  @include respond-to(medium-screens) {
+    font-size: 1.5vw;
+  }
+
+  @include respond-to(wide-screens) {
+    font-size: 1.6vw;
+  }
+}
+
+main {
+  height: 100% !important;
+}
+
+.side > p {
+  font-size: 2em;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include respond-to(medium-screens) {
+    flex-flow: column-reverse wrap;
+  }
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $intro;
+  font-weight: 900;
+
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+
+
+}
+
+/*Scroll-Steps-Import*/
+#container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.step-section {
+  height: 100%;
+  width: 100%;
+}

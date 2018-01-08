@@ -1,0 +1,82 @@
+.flex-parent {
+  display: flex;
+  flex-flow: row wrap;
+
+  &.inner {
+    flex-flow: column nowrap;
+  }
+}
+
+.flex-child {
+  flex-grow: 1;
+  flex-basis: 30em;
+
+  &.inner {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 10%;
+  }
+}
+
+.side {
+  height: 100vh;
+  overflow-x: hidden;
+
+  &.right {
+    overflow-y: hidden;
+
+    &  div.flex-child.inner {
+      padding: 0;
+    }
+
+    & > div.step-section {
+      position: absolute;
+      background-color: white;
+      width: 50%;
+      //    z-index: -10;
+      opacity: 0;
+
+      -webkit-transition:opacity 350ms ease-out;
+      -moz-transition:opacity 350ms ease-out;
+      -o-transition:opacity 350ms ease-out;
+      transition:opacity 350ms ease-out;
+
+      @include respond-to(medium-screens) {
+        height: 50%;
+        width: 100%;
+      }
+    }
+
+    & > div.fadeIn {
+      display: flex;
+      opacity: 1;
+      //    z-index: 999;
+    }
+
+    & > div#zero-images {
+      //    z-index: 10;
+      //    opacity: 1;
+    }
+  }
+
+  &.left {
+    overflow-y: scroll;
+    background-color: $leftBackground;
+
+    & p {
+      font-size: 1.25em;
+      line-height: 1.25;
+
+      @include respond-to(medium-screens) {
+        font-size: 2.25em;
+      }
+    }
+
+    & div.flex-child {
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
+}
