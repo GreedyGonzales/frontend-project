@@ -26,6 +26,11 @@
   &.right {
     overflow-y: hidden;
 
+
+    @include respond-to(medium-screens) {
+      //flex-basis: 18vh;
+    }
+
     & > div.step-section {
       position: absolute;
       background-color: white;
@@ -37,6 +42,11 @@
       -moz-transition:opacity 350ms ease-out;
       -o-transition:opacity 350ms ease-out;
       transition:opacity 350ms ease-out;
+
+      @include respond-to(medium-screens) {
+        height: 50%;
+        width: 100%;
+      }
     }
 
     & > div.fadeIn {
@@ -58,6 +68,10 @@
     & p {
       font-size: 1.25em;
       line-height: 1.25;
+
+      @include respond-to(medium-screens) {
+        font-size: 2.25em;
+      }
     }
 
     & div.flex-child {

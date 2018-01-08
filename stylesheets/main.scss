@@ -1,6 +1,7 @@
 // Modules and Variables
 @import "partials/base";
 @import "modules/colors";
+@import "modules/utility";
 
 // Partials
 @import "partials/reset";
@@ -13,7 +14,25 @@
 
 // ....
 
-// Third-part
+// sThird-part
+h1 {
+  font-size: $h1;
+
+  @include respond-to(medium-screens) {
+    font-size: 2 * $h1;
+  }
+}
+
+h2 {
+  font-size: $h2;
+  font-weight: 900;
+
+  @include respond-to(medium-screens) {
+    font-size: 2 * $h2;
+    margin-bottom: 0.25em;
+  }
+}
+
 body {
   font-size: $Bodycopy;
   font-family: 'Roboto', sans-serif;
@@ -34,6 +53,10 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+
+  @include respond-to(medium-screens) {
+    flex-flow: column-reverse wrap;
+  }
 }
 
 .intro-text {
@@ -48,6 +71,8 @@ main {
   -ms-transform: translate3d(-50%, -50%, 0);
   -o-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
+
+
 }
 
 /*Scroll-Steps-Import*/
@@ -60,16 +85,4 @@ main {
 .step-section {
   height: 100%;
   width: 100%;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
 }
