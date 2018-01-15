@@ -50,7 +50,7 @@ Auf der linken Seite befindet sich der scrollbare Content-Bereich. Hier wurde be
   
 * Textfarbe Introtext
   * #D91E18
-  * Verwendung: Diese Farbe findet sich im Intr-Schriftzug: "Pokédex" wieder.
+  * Verwendung: Diese Farbe findet sich im Intro-Schriftzug: "Pokédex" wieder.
 
 * Typenfarben: Pflanze, Gift, Feuer, Wasser
   * Pflanze: #2ECC71
